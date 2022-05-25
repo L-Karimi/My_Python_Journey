@@ -23,4 +23,27 @@ name_length = len(given_name)+len(middle_names)+len(family_name)
 # Nothing you need to do here
 driving_license_character_limit = 28
 print(name_length <= driving_license_character_limit)
+#VCalculate and print the total sales for the week from the data provided. Print out a string of the form "This week's total sales: xxx", where xxx will be the actual total of all the numbers. You’ll need to change the type of the input data in order to calculate that total.
+mon_sales = "121"
+tues_sales = "105"
+wed_sales = "110"
+thurs_sales = "98"
+fri_sales = "95"
 
+#TODO: Print a string with this format: This week's total sales: xxx
+# You will probably need to write some lines of code before the print statement.
+total_sales = int("121")+int("105")+int("110")+int("98")+int("95")
+print(total_sales)
+# print("This week's total sales:" + total_sales)
+
+
+animal = "dog"
+action = "bite"
+print("Does your {} {}?".format(animal, action))
+
+
+course="software development"
+print(course.capitalize())
+print(course.casefold())
+print(course.expandtabs())
+print(course.endswith('f'))

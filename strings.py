@@ -47,3 +47,11 @@ print(course.capitalize())
 print(course.casefold())
 print(course.expandtabs())
 print(course.endswith('f'))
+
+
+animal = "dog"
+action = "bite"
+print("Does your {} {}?".format(animal,action))
+
+maria_string = "Maria loves {} and {}"
+print(maria_string.format("English", "statistics"))

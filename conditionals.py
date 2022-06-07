@@ -33,3 +33,33 @@ class Solution:
                 ans.append(str(num))
 
         return ans
+Solution()
+# class season():
+#     if season == 'spring':
+#         print('plant the garden!')
+#     elif season == 'summer':
+#         print('water the garden!')
+#     elif season == 'fall':
+#         print('harvest the garden!')
+#     elif season == 'winter':
+#         print('stay indoors!')
+#     else:
+#         print('unrecognized season')
+# season()
+number = 145
+if number %2==0:
+    print("Number" + str(number) + "is even")
+else:
+    print("Number"+str(number)+ " is odd")
+    
+if age <= free_up_to_age:
+    ticket_price = 0
+elif age <= child_up_to_age:
+    ticket_price = concession_ticket
+elif age >= senior_from_age:
+    ticket_price = concession_ticket
+else:
+    ticket_price = adult_ticket
+
+message = "Somebody who is {} years old will pay ${} to ride the bus.".format(age, ticket_price)
+print(message)

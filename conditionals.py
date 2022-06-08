@@ -147,4 +147,9 @@ def worldle():
                 
 worldle()
             
-                
+            
+            
+prefix="LJSZYJABPHRY"
+suffix="ack"
+for letter in prefix:
+    print("letter+suffix") 

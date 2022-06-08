@@ -1,3 +1,6 @@
+from random import random
+
+
 phone_balance = 3
 bank_balance = 10
 
@@ -103,3 +106,45 @@ elif answer==guess:
     result = "Nice!  Your guess matched the answer!"
 
 print(result)
+
+#Create a program, 
+# which, given a 5 character string as a target word, 
+# and a 5 character string as a guess, return a 5 character string where:
+#‘2’ = this letter is in this position
+#‘1’ = this letter is in the target word but not this position
+#‘0’ = this letter is either not in the target word, or is not in the target word as many times as it is in the guess
+
+def worldle():
+    name= str(input("Enter a word:"))
+    names = ["Janeffer","Smith","Scott","Marvin","John","Greg","Justin","Rittah","Joannah","Hariet","Christine"]
+    word = random.choice(name)
+    print("Guess the characters")
+    guesses =""
+    turns +=1
+    while turns>0:
+        failed =0
+        for char in word:
+            if char in guesses:
+                print(char,end="")
+            else:
+                print("")
+                print(char,end="")
+                failed+=1
+                
+        if failed==0:
+            print("You won!")
+            print("The word is: ",word)
+            break
+        print()
+        guess= input("Guess a character:")
+        guesses+=guess
+        if guesses  not in word:
+            turns-+1
+            print("wrong")
+            print("You have ,"+ turns),"more guesses"
+            if turns==0:
+                print("You loose")
+                
+worldle()
+            
+                

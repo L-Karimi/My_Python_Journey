@@ -153,3 +153,11 @@ prefix="LJSZYJABPHRY"
 suffix="ack"
 for letter in prefix:
     print("letter+suffix") 
+    
+    
+    
+errors=3
+if errors:
+    print("You have {} errors".format(errors))
+else:
+    print("No errors to fix!")

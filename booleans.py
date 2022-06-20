@@ -9,3 +9,14 @@ if(san_francisco_pop_density>rio_de_janeiro_pop_density):
     print(True)
 else:
     print(False)
+
+
+def isPalindrome(x):
+    return x== x[::-1]
+x = "radar"
+
+answer = isPalindrome(x)
+if answer:
+        print(True)
+else:
+    print(False)

@@ -1,4 +1,6 @@
+from ast import Str
 from curses.ascii import isupper
+import string
 from unittest import result
 
 
@@ -58,3 +60,25 @@ new_chars=characters[:]
 print(new_chars)
 characters[1:5] =[]
 print()
+
+
+# write a program that takes in a string and counts the number of vowels in the string
+
+name="Lucy Karimi"
+def vowels(string):
+    new_name=""
+    for i in name:
+        if i=="a"or i=="e"or i=="e"or i=="o"or i=="u"  in name:
+            new_name+=i
+            print(name.count(i))
+vowels("Lucy")
+            
+            
+# write a program to find common characters in 2 strings
+str1=Str(input("Enter a name:"))
+str2=Str(input("Enter a name:"))
+a=list[set(str1)&set(str2)]
+for i in a:
+    print(i)
+            
+        

@@ -1,6 +1,4 @@
-from ast import Str
 from curses.ascii import isupper
-import string
 from unittest import result
 
 
@@ -75,10 +73,6 @@ vowels("Lucy")
             
             
 # write a program to find common characters in 2 strings
-str1=Str(input("Enter a name:"))
-str2=Str(input("Enter a name:"))
-a=list[set(str1)&set(str2)]
-for i in a:
-    print(i)
+
             
         
